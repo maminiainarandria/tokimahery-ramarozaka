@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/css/courses.css">
+    <link rel="stylesheet" href="/css/style.css">
+
+    <title>Courses</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo_site">
+            <a href="#"> <img src="/assets/img/logo.png" alt=""></a>
+        </div>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="/index.html">HOME</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="#">COURSES</a></li>
+                <li><a href="">TESTIMONIALS</a></li>
+                <li><a href="">RESEARCH</a></li>
+                <li><a href="">CONTACT</a></li>
+            </ul>
+        </nav>
+
+        <div class=" search">
+            <input type="search" placeholder="Search anything...">
+            <i class="fa-solid fa-basket-shopping"></i>
+        </div>
+    </header>
+
+    <section class="hero">
+
+        <div class="hero-learning">
+            <span class="line"></span>
+            <p class="subtitle">LEARNING</p>
+            <span class="line"></span>
+        </div>
+
+        <h1>
+            All <span>courses</span>
+        </h1>
+
+        <p class="description">
+            Online and offline courses across development, translation, and research.
+            Find the one that fits your level and goals.
+        </p>
+
+    </section>
+
+    <div class="filters">
+
+        <!-- LANGUAGE -->
+        <div class="filter-group">
+            <p>LANGUAGE</p>
+
+            <div class="languages" id="language">
+                <img src="https://flagcdn.com/w40/fr.png" data-lang="fr" class="flag">
+                <img src="https://flagcdn.com/w40/us.png" data-lang="en" class="flag">
+                <img src="https://flagcdn.com/w40/mg.png" data-lang="mg" class="flag">
+            </div>
+
+        </div>
+
+
+        <!-- TECHNOLOGY -->
+        <div class="filter-group">
+            <p>TECHNOLOGY</p>
+
+            <select id="technology">
+                <option value="all">All technologies</option>
+                <option value="javascript">Javascript</option>
+                <option value="java">Java</option>
+                <option value="python">Python</option>
+                <option value="php">PHP</option>
+            </select>
+
+        </div>
+
+
+        <!-- LEVEL -->
+        <div class="filter-group">
+            <p>LEVEL</p>
+
+            <select id="level">
+                <option value="all">All levels</option>
+                <option value="beginner">Beginner</option>
+                <option value="intermediate">Intermediate</option>
+                <option value="advanced">Advanced</option>
+            </select>
+
+        </div>
+
+
+        <!-- PRICE RANGE -->
+        <div class="filter-group priceBox">
+
+            <div class="priceTop">
+                <p>PRICE RANGE</p>
+
+                <div class="priceLabel">
+                    <span id="minPrice">0</span> Ar —
+                    <span id="maxPrice">300000</span> Ar
+                </div>
+            </div>
+            <input type="range" id="minRange" min="0" max="300000" step="5000" value="0">
+            <input type="range" id="maxRange" min="0" max="300000" step="5000" value="300000">
+
+        </div>
+
+
+        <!-- SEARCH -->
+        <div class="filter-group searchBox">
+
+            <p>SEARCH</p>
+
+            <input type="text" id="search" placeholder="English">
+
+        </div>
+
+
+        <button id="clear">CLEAR ALL</button>
+    </div>
+
+
+    <hr>
+
+
+    <p id="courseCount"></p>
+
+    <div id="coursesContainer" class="courses"></div>
+    <footer class="course-footer">
+        <h2>Not sure where to start?</h2>
+
+        <p>
+            Book a free discovery call and find the course that fits your goals and schedule.
+        </p>
+
+        <a href="#contact" class="contact_button">GET IN TOUCH</a>
+    </footer>
+
+    <script type="module" src="/js/courses.js"></script>
+<div id="toast" class="toast"></div>
+</body>
+
+</html>

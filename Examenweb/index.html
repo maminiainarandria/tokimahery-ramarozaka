@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mr. Toky</title>
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:ital,wght@0,400;1,400;1,700&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    <div class="logo_site">
+      <a href="#"><img src="../assets/img/logo.png" alt=""></a>
+    </div>
+
+    <nav class="navbar">
+      <ul>
+        <li><a href="#">HOME</a></li>
+        <li><a href="/pages/blog.html">BLOG</a></li>
+        <li><a href="/pages/courses.html">COURSES</a></li>
+        <li><a href="">TESTIMONIALS</a></li>
+        <li><a href="">RESEARCH</a></li>
+        <li><a href="">CONTACT</a></li>
+      </ul>
+    </nav>
+
+    <div class="search">
+      <input type="search" placeholder="Search anything...">
+      <i class="fa-solid fa-basket-shopping" id="basket"></i>
+    </div>
+     <div class="menu_toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </header>
+
+  <section class="hero_section">
+    <div class="hero_left">
+      <div class="section_label">
+        <hr />
+        <h4>PORTFOLIO & SERVICES</h4>
+      </div>
+
+      <div class="hero_name">
+        <h1 class="main_name">Tokimahery</h1>
+        <h2 class="sub_name">Ramarozaka</h2>
+      </div>
+
+      <div class="hero_role">
+        <p>CONSULTANT · TEACHER · DEVELOPER · TRANSLATOR · PHD</p>
+      </div>
+
+      <p class="hero_description">
+        Bridging knowledge across disciplines — from cutting-edge software
+        development to academic research and multilingual expertise.
+      </p>
+
+      <div class="hero_buttons">
+        <a href="/pages/courses.html" class="primary_btn">Book a course</a>
+        <a href="/" class="secondary_btn">About me</a>
+      </div>
+
+      <div class="collab_link">
+        <a href="">ASK FOR A COLLABORATION</a>
+        <i class="fa-solid fa-arrow-right"></i>
+      </div>
+
+      <div class="social_links">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+
+    </div>
+
+    <div class="hero_right">
+      <div class="profile_circle">
+        <img src="./assets/img/square-image.jpg" alt="profile" />
+      </div>
+    </div>
+  </section>
+
+  <section class="about_section">
+    <div class="about_intro">
+      <div class="section_tag">
+        <hr />
+        <h4>WHO I AM</h4>
+      </div>
+
+      <h2>About</h2>
+      <h3>me</h3>
+    </div>
+
+    <div class="about_content">
+      <p id="bioText1" class="bio_paragraph"></p>
+      <p id="bioText2" class="bio_paragraph"></p>
+
+      <hr class="divider_line" />
+
+      <div class="stats_group">
+        <div class="stat_card">
+          <h2 id="stat1" class="stat_number"></h2>
+          <p class="statLabel1"></p>
+        </div>
+
+        <div class="stat_card">
+          <h2 id="stat2" class="stat_number"></h2>
+          <p class="statLabel2"></p>
+        </div>
+
+        <div class="stat_card">
+          <h2 id="stat3" class="stat_number"></h2>
+          <p class="statLabel3"></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="courses_section">
+    <div class="courses_label">
+      <hr />
+      <h4>LEARNING</h4>
+      <hr />
+    </div>
+
+    <div class="courses_heading">
+      <h2>Courses <span>online</span></h2>
+      <h2>and offline</h2>
+    </div>
+
+    <div class="courses_grid">
+      <div class="course_card">
+        <div class="course_badge">
+          <button class="badge_red">Development</button>
+        </div>
+        <h3>Web Development Fundamentals</h3>
+        <hr />
+        <div class="course_meta">
+          <p>Online</p>
+          <p>8 weeks</p>
+        </div>
+      </div>
+
+      <div class="course_card">
+        <div class="course_badge">
+          <button class="badge_dark">Translation</button>
+        </div>
+        <h3>Technical Translation Masterclass</h3>
+        <hr />
+        <div class="course_meta">
+          <p>Hybrid</p>
+          <p>6 weeks</p>
+        </div>
+      </div>
+
+      <div class="course_card">
+        <div class="course_badge">
+          <button class="badge_gray">Research</button>
+        </div>
+        <h3>Academic Writing & Methodology</h3>
+        <hr />
+        <div class="course_meta">
+          <p>Offline</p>
+          <p>10 weeks</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="courses_link">
+      <a href="/pages/courses.html">VIEW ALL COURSES</a>
+      <i class="fa-solid fa-arrow-right"></i>
+    </div>
+  </section>
+  <section class="experience_section">
+    <div class="experience_label">
+      <hr />
+      <h4>BACKGROUND</h4>
+    </div>
+
+    <h2 class="experience_title">Experience</h2>
+
+    <div class="timeline_grid">
+
+      <div class="timeline_item">
+        <hr />
+        <div class="timeline_text">
+          <h4 id="expYear1"></h4>
+          <h3 id="expRole1"></h3>
+          <h5 id="expOrg1"></h5>
+          <p id="expDesc1"></p>
+        </div>
+      </div>
+
+      <div class="timeline_item">
+        <hr />
+        <div class="timeline_text">
+          <h4 id="expYear3"></h4>
+          <h3 id="expRole3"></h3>
+          <h5 id="expOrg3"></h5>
+          <p id="expDesc3"></p>
+        </div>
+      </div>
+
+      <div class="timeline_item">
+        <hr />
+        <div class="timeline_text">
+          <h4 id="expYear2"></h4>
+          <h3 id="expRole2"></h3>
+          <h5 id="expOrg2"></h5>
+          <p id="expDesc2"></p>
+        </div>
+      </div>
+
+      <div class="timeline_item">
+        <hr />
+        <div class="timeline_text">
+          <h4 id="expYear4"></h4>
+          <h3 id="expRole4"></h3>
+          <h5 id="expOrg4"></h5>
+          <p id="expDesc4"></p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="contact_footer">
+    <h2>Ready to collaborate?</h2>
+    <p>Whether you're looking for a course, a consultation, or a translation — let's talk.</p>
+    <a href="#contact" class="contact_button">GET IN TOUCH</a>
+  </footer>
+  <script type="module" src="/js/main.js"></script>
+</body>
+
+</html>

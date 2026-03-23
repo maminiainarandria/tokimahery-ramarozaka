@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tokymahery Ramarozaka - Blog</title>
+    <!-- cdn font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- css blog-->
+    <link rel="stylesheet" href="../css/blog.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="logo_site">
+            <a href="#"><img src="../assets/img/logo.png" alt=""></a>
+        </div>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="/index.html">HOME</a></li>
+                <li><a href="#">BLOG</a></li>
+                <li><a href="courses.html">COURSES</a></li>
+                <li><a href="">TESTIMONIALS</a></li>
+                <li><a href="">RESEARCH</a></li>
+                <li><a href="">CONTACT</a></li>
+            </ul>
+        </nav>
+
+        <div class="search">
+            <input type="search" placeholder="Search anything...">
+            <i class="fa-solid fa-basket-shopping" id="basket"></i>
+        </div>
+
+    </header>
+
+    <main>
+
+        <section class="blog">
+            <h4>WRITING</h4>
+            <h1>The <span>blog</span></h1>
+            <p>Thoughts on teaching, software engineering, languages, and everything in between.</p>
+        </section>
+
+        <section>
+
+            <div class="blog_main">
+                <!-- POSTS -->
+                <div id="postsContainer" class="postsContainer"></div>
+
+                <!-- ARCHIVES + YOUTUBE -->
+                <div class="sideContainer">
+                    <div class="archivesWrapper">
+                        <h4>ARCHIVES</h4>
+                        <div class="date">
+                            <p>January 2026</p>
+                            <p>2</p>
+                        </div>
+                        <div class="date">
+                            <p>February 2026</p>
+                            <p>1</p>
+                        </div>
+                        <ul id="archivesContainer" class="archivesContainer"></ul>
+                    </div>
+                    <div class="newsletter">
+                        <h4>NEWSLETTER</h4>
+                        <p>Get new articles straight to your in box. No spam, ever.</p>
+                        <div class="subscribe">
+                            <input type="email" placeholder="your@email.com" required>
+                            <button>SUBSCRIBE</button>
+                        </div>
+                    </div>
+                    <div id="youtubeContainer">
+                        <h4>ON YOUTUBE</h4>
+                        <p>Latest Video from the channel</p>
+
+                        <div class="call_action get_course">
+                            <h6>VIEW ALL COURSES <i class="fa-solid fa-arrow-right"></i></h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="next_blog">
+
+                <div class="next prev_btn">
+                    <p><i class="fa-solid fa-arrow-left"></i> Prev</p>
+                </div>
+
+                <div class="count_page"></div>
+
+                <div class="next next_btn">
+                    <p>Next <i class="fa-solid fa-arrow-right"></i></p>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer">
+            <h2>Want to go deeper?</h2>
+            <p>Explore the courses or get in touch for a consultation.</p>
+            <div class="get_courses">
+                <button>BROWSE COURSE</button>
+                <button>GET IN TOUCH</button>
+            </div>
+        </div>
+    </footer>
+
+
+
+   <script type="module" src="../js/blog.js"></script>
+</body>
+
+</html>
